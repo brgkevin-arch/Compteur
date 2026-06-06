@@ -64,6 +64,34 @@
       position: relative;
     }
 
+    /* ── Mobile : colonne ── */
+    @media (max-width: 600px) {
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .divider {
+        width: 80px;
+        height: 1px;
+        min-height: unset;
+        position: static;
+      }
+
+      .main-title {
+        display: none;
+      }
+
+      .counter-block, .chrono-block {
+        justify-self: unset;
+      }
+
+      .count { font-size: 6rem; }
+      .chrono { font-size: 5rem; }
+    }
+
     /* ── Labels ── */
     .label {
       font-size: 0.7rem;
